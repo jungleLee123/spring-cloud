@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class AdminController {
 
+    // 通过application.yml注入值
     @Value("${server.port}")
     private String port;
 

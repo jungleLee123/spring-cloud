@@ -232,6 +232,7 @@
             </snapshots>
         </repository>
 
+        <!-- spring自己的仓库-->
         <repository>
             <id>spring-snapshots</id>
             <name>Spring Snapshots</name>

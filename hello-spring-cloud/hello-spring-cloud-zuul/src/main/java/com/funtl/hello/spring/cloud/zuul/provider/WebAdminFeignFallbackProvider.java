@@ -1,4 +1,4 @@
-package com.funtl.hello.spring.cloud.zuul.fallback;
+package com.funtl.hello.spring.cloud.zuul.provider;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.cloud.netflix.zuul.filters.route.FallbackProvider;
@@ -70,6 +70,8 @@ public class WebAdminFeignFallbackProvider implements FallbackProvider {
 
             @Override
             public InputStream getBody() throws IOException {
+
+              //ObjectMapper用来封装json
                 ObjectMapper objectMapper = new ObjectMapper();
                 Map<String, Object> map = new HashMap<>();
                 map.put("status", 200);

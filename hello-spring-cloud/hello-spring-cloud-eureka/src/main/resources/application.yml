@@ -16,6 +16,7 @@ eureka:
   instance:
     hostname: localhost
   client:
+#    设置服务端形式
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:

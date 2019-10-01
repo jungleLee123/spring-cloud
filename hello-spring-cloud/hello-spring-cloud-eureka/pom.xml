@@ -54,6 +54,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
+                    <!--指定入口类-->
                     <mainClass>com.funtl.hello.spring.cloud.eureka.EurekaApplication</mainClass>
                 </configuration>
             </plugin>
